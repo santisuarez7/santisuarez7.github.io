@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santiago - portafolio personal</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml"> 
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top" class="dark_theme">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1 class="h1 logo">
+        <a href="#">Santiago<span>.</span></a>
+      </h1>
+
+      <div class="navbar-actions">
+
+        <select name="language" id="lang">
+          <option value="en">Es</option>
+          <option value="ar">En</option>
+        </select>
+
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link">Home.</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">Sobre mí.</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link">Skills.</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navbar-link">Portafolio.</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link">Contacto.</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article class="container">
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+
+        <figure class="hero-banner">
+
+          <picture>
+            <source srcset="./assets/images/hero-banner.png" media="(min-width: 768px)">
+            <source srcset="./assets/images/hero-banner.png" media="(min-width: 500px)">
+            <img src="./assets/images/hero-banner-sm.png" alt="Imagen representativa"             
+              class="w-100">                                                                      
+          </picture>
+
+        </figure>
+
+        <div class="hero-content">
+
+          <h2 class="h2 hero-title">Soy Santiago Suárez, programador en camino al análisis de datos</h2> 
+
+          <a href="#contact" class="btn btn-primary">Contactame</a> 
+
+        </div>
+
+        <ul class="hero-social-list">
+          <li>
+            <a href="https://github.com/santisuarez7" class="hero-social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+              <div class="tooltip">GitHub</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/santiago-suárez-468390303" class="hero-social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+              <div class="tooltip">LinkedIn</div>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:santysuarez16@gmail.com" class="hero-social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+              <div class="tooltip">Email</div>
+            </a>
+          </li>
+        </ul>
+
+        <a href="#stats" class="scroll-down">Scroll</a>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #STATS
+      -->
+
+      <section class="stats" id="stats">
+        <ul class="stats-list">
+
+          <li>
+            <a href="#" class="stats-card">
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-1.png" alt="Icono título universitario">
+              </div>
+              <h2 class="h2 card-title">
+                2025 <strong>Graduado UTN - Técnico en Programación</strong>
+              </h2>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-2.png" alt="Icono certificación">
+              </div>
+              <h2 class="h2 card-title">
+                2025 <strong>Certificación Google - Análisis de Datos</strong>
+              </h2>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+              <div class="card-icon">
+                <img src="./assets/images/globe-americas.svg" alt="Icono idioma inglés">
+              </div>
+              <h2 class="h2 card-title">
+                Inglés<strong>Intermedio</strong>
+              </h2>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+    <section class="about" id="about">
+
+      <figure class="about-banner">
+        <img src="./assets/images/about-banner.png" alt="Imagen representativa"  
+          class="w-100">                                                                   
+      </figure>
+
+      <div class="about-content section-content">
+
+        <p class="section-subtitle">Sobre mí</p>
+
+        <h2 class="h3 section-title">Programador recién graduado, iniciando mi carrera en análisis de datos</h2>
+
+        <p class="section-text">
+          Me recibí como Técnico en Programación en la UTN en 2025 y completé la certificación de Google en Análisis de Datos.  
+          Estoy dando mis primeros pasos profesionales, con el objetivo de crecer en el área de data analytics y combinar mis conocimientos de programación con el análisis de información.  
+        </p>
+
+        <div class="btn-group">
+          <a href="#skills"><button class="btn btn-secondary">Ver proyectos</button></a>
+          <button id="download-cv" class="btn btn-primary">Descargar CV</button>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="skills" id="skills">
+
+        <div class="skills-content section-content">
+
+          <p class="section-subtitle">Mis skills</p>
+
+          <h2 class="h3 section-title">Skills y herramientas</h2> 
+
+          <p class="section-text"> Estas son las tecnologías y herramientas que manejo y estoy aprendiendo.</p>
+
+          <div class="skills-toggle" data-toggle-box>
+            <button class="toggle-btn active" data-toggle-btn>Skills</button>
+
+            <button class="toggle-btn" data-toggle-btn>Tools</button>     
+          </div>
+
+        </div>
+
+        <div class="skills-box" data-skills-box>
+
+          <!-- Lista de Skills -->
+          <ul class="skills-list">
+
+            <!-- Análisis de datos primero -->
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Excel</div>
+                <div class="card-icon">
+                  <img src="./assets/images/excel.png" alt="Excel logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">SQL (MySQL / BigQuery)</div>
+                <div class="card-icon">
+                  <img src="./assets/images/sql.png" alt="SQL logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Tableau</div>
+                <div class="card-icon">
+                  <img src="./assets/images/tableau.png" alt="Tableau logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">R</div>
+                <div class="card-icon">
+                  <img src="./assets/images/r.png" alt="R logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Supabase</div>
+                <div class="card-icon">
+                  <img src="./assets/images/supabase.png" alt="Supabase logo">
+                </div>
+              </div>
+            </li>
+
+            <!-- Programación al final -->
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">HTML5</div>
+                <div class="card-icon">
+                  <img src="./assets/images/html5.png" alt="HTML5 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">CSS3</div>
+                <div class="card-icon">
+                  <img src="./assets/images/css3.png" alt="CSS3 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">TypeScript</div>
+                <div class="card-icon">
+                  <img src="./assets/images/typescript.png" alt="TypeScript logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Angular</div>
+                <div class="card-icon">
+                  <img src="./assets/images/angular.png" alt="Angular logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Ionic</div>
+                <div class="card-icon">
+                  <img src="./assets/images/ionic.png" alt="Ionic logo">
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+          <!-- Lista de Herramientas -->
+          <ul class="tools-list">  
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">MySQL</div>
+                <div class="card-icon">
+                  <img src="./assets/images/mysql.png" alt="MySQL logo">
+                </div>
+              </div>
+            </li>
+  
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">BigQuery</div>
+                <div class="card-icon">
+                  <img src="./assets/images/bigquery.png" alt="BigQuery logo">
+                </div>
+              </div>
+            </li>
+  
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Kaggle</div>
+                <div class="card-icon">
+                  <img src="./assets/images/kaggle.png" alt="Kaggle logo">
+                </div>
+              </div>
+            </li>
+  
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">RMarkdown</div>
+                <div class="card-icon">
+                  <img src="./assets/images/rmarkdown.png" alt="RMarkdown logo">
+                </div>
+              </div>
+            </li>
+  
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">RStudio</div>
+                <div class="card-icon">
+                  <img src="./assets/images/rstudio.png" alt="RStudio logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">VS Code</div>
+                <div class="card-icon">
+                  <img src="./assets/images/vs-code.png" alt="VS Code logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Trello</div>
+                <div class="card-icon">
+                  <img src="./assets/images/trello.png" alt="Trello logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Git</div>
+                <div class="card-icon">
+                  <img src="./assets/images/git.png" alt="Git logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Command Line</div>
+                <div class="card-icon">
+                  <img src="./assets/images/command.png" alt="Command Line logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Visual Studio</div>
+                <div class="card-icon">
+                  <img src="./assets/images/visualstudio.png" alt="Visual Studio logo">
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+      </section>  
+
+
+      <!-- 
+        - #PROJECTS
+      --> 
+
+      <section class="project" id="portfolio">
+
+        <ul class="project-list">
+
+          <li>
+            <div class="project-content section-content">
+
+              <p class="section-subtitle">Mis proyectos</p>
+
+              <h2 class="h3 section-title">Algunos de mis trabajos</h2>
+
+              <p class="section-text">
+                Estos son proyectos académicos y personales que reflejan mi aprendizaje en programación y análisis de datos. 
+                Podés ver el código en GitHub y los notebooks en Kaggle.         
+              </p>
+
+            </div>
+          </li>
+
+          <!-- Proyecto Restaurante -->
+          <li>
+            <a href="https://github.com/santisuarez7/tp-resto-2025.git" class="project-card" target="_blank">
+              <figure class="card-banner">
+                <img src="./assets/images/project-restaurant.png" class="w-100" alt="Proyecto Restaurante">     
+              </figure>
+              <div class="card-content">
+                <h3 class="h4 card-title">Restauran't</h3>
+                <time class="publish-date" datetime="2025-11">Noviembre 2025</time>
+              </div>
+            </a>
+          </li>
+
+          <!-- Proyecto Clínica Online -->
+          <li>
+            <a href="https://github.com/santisuarez7/Santiago-Suarez-Clinica-Online-2025.git" class="project-card" target="_blank">
+              <figure class="card-banner">
+                <img src="./assets/images/project-clinica.png" class="w-100" alt="Proyecto Clínica Online">     
+              </figure>
+              <div class="card-content">
+                <h3 class="h4 card-title">Clínica Online</h3>
+                <time class="publish-date" datetime="2024-11">Noviembre 2024</time>
+              </div>
+            </a>
+          </li>
+
+          <!-- Bootcamp Data Analytics -->
+          <li>
+            <a href="https://github.com/tuusuario/bootcamp-data-analytics" class="project-card" target="_blank">     <!--isajdoijasiodjoijisojoijajd-->
+              <figure class="card-banner">        
+                <img src="./assets/images/project-analytics.jpg" class="w-100" alt="Bootcamp Data Analytics">     
+              </figure>
+              <div class="card-content">
+                <h3 class="h4 card-title">Bootcamp Data Analytics</h3>
+                <time class="publish-date" datetime="2025-02">Febrero 2025</time>
+              </div>
+            </a>
+          </li>
+
+          <!-- Case Study 1 -->
+          <li>
+            <a href="https://www.kaggle.com/tuusuario/case-study-1" class="project-card" target="_blank">      <!--isajdoijasiodjoijisojoijajd-->
+              <figure class="card-banner">
+                <img src="./assets/images/project-cyclistic.png" class="w-100" alt="Case Study 1">        
+              </figure>
+              <div class="card-content">
+                <h3 class="h4 card-title">Case Study Cyclistic</h3>
+                <time class="publish-date" datetime="2025-12">Diciembre 2025</time>
+              </div>
+            </a>
+          </li>
+
+          <!-- Case Study 2 -->
+          <li>
+            <a href="https://www.kaggle.com/tuusuario/case-study-2" class="project-card" target="_blank">      <!--isajdoijasiodjoijisojoijajd-->
+              <figure class="card-banner">
+                <img src="./assets/images/project-bellabeat.png" class="w-100" alt="Case Study 2">    
+              </figure>
+              <div class="card-content">
+                <h3 class="h4 card-title">Case Study Bellabeat</h3>
+                <time class="publish-date" datetime="2026-01">Enero 2026</time>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+
+      </section>
+
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+    <section class="contact" id="contact">
+
+      <div class="contact-content section-content">
+
+        <p class="section-subtitle">Contacto</p>
+
+        <h2 class="h3 section-title">¿Querés ponerte en contacto conmigo?</h2>
+
+        <p class="section-text">
+          Si tenés una propuesta podés completar el formulario o usar los medios de contacto que figuran abajo.
+        </p>
+
+        <ul class="contact-list">
+
+          <li class="contact-list-item">
+            <div class="contact-item-icon">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+            <div class="wrapper">
+              <h3 class="h4 contact-item-title">Teléfonos:</h3>
+              <a href="tel:+541121577705" class="contact-info">(+54) 11 2157 7705</a>
+              <a href="tel:+541126319957" class="contact-info">(+54) 11 2631 9957</a>
+            </div>
+          </li>
+
+          <li class="contact-list-item">
+            <div class="contact-item-icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="wrapper">
+              <h3 class="h4 contact-item-title">Emails:</h3>
+              <a href="mailto:santysuarez16@gmail.com" class="contact-info">santysuarez16@gmail.com</a>
+              <a href="mailto:santysuarez04@hotmail.com" class="contact-info">santysuarez04@hotmail.com</a>
+            </div>
+          </li>
+
+          <li>
+            <ul class="contac-social-list">
+              <li>
+                <a href="https://github.com/tuusuario" class="contact-social-link" target="_blank">
+                  <div class="tooltip">GitHub</div>
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/tuusuario" class="contact-social-link" target="_blank">
+                  <div class="tooltip">LinkedIn</div>
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <form action="" class="contact-form">
+
+        <div class="form-wrapper">
+          <label for="name" class="form-label">Nombre</label>
+          <div class="input-wrapper">
+            <input type="text" name="name" id="name" required placeholder="ej. Juan Gómez" class="input-field">
+            <ion-icon name="person-circle"></ion-icon>
+          </div>
+        </div>
+
+        <div class="form-wrapper">
+          <label for="email" class="form-label">Email</label>
+          <div class="input-wrapper">
+            <input type="email" name="email" id="email" required placeholder="ej. juangomez@mail.com" class="input-field">
+            <ion-icon name="mail"></ion-icon>
+          </div>
+        </div>
+
+        <div class="form-wrapper">
+          <label for="phone" class="form-label">Teléfono</label>
+          <div class="input-wrapper">
+            <input type="tel" name="phone" id="phone" required placeholder="Número telefónico" class="input-field">
+            <ion-icon name="call"></ion-icon>
+          </div>
+        </div>
+
+        <div class="form-wrapper">
+          <label for="message" class="form-label">Mensaje</label>
+          <div class="input-wrapper">
+            <textarea name="message" id="message" required placeholder="Escribí un mensaje..." class="input-field"></textarea>
+            <ion-icon name="chatbubbles"></ion-icon>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+
+      </form>
+
+    </section>
+
+
+    </article>
+  </main>
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
