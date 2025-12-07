@@ -1,56 +1,32 @@
 <div align="center">
-  
-  ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/jack-portfolio)
-  ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/jack-portfolio?style=social)
-  ![GitHub forks](https://img.shields.io/github/forks/codewithsadee/jack-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-  [![YouTube Video Views](https://img.shields.io/youtube/views/DdlVKS7MROY?style=social)](https://youtu.be/DdlVKS7MROY)
 
-  <br />
-  <br />
-  
-  <img src="./readme-images/project-logo.png" />
+  <h2 align="center">Portfolio Personal</h2>
 
-  <h2 align="center">Jack - Personal portfolio</h2>
+  Este repositorio contiene mi portfolio web.  
+  Está desarrollado con **HTML, CSS y JavaScript**, y reúne información sobre mí, mis habilidades y algunos proyectos.
 
-  This website is fully responsive personal portfolio, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
-
-  <a href="https://codewithsadee.github.io/jack-portfolio/"><strong>➥ Live Demo</strong></a>
+  <a href="https://santisuarez7.github.io"><strong>➥ Ver sitio en vivo</strong></a>
 
 </div>
 
-<br />
+---
 
-### Demo Screeshots
+### 📌 Contenido
+- Sección "Sobre mí"
+- Listado de habilidades (programación y análisis de datos)
+- Proyectos académicos y personales
+- Información de contacto
 
-![Jack Portfolio Desktop Demo](./readme-images/desktop.png "Desktop Demo")
-
-### Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
-### Run Locally
-
-To run **jack-portfolio** locally, run this command on your git bash:
-
-Linux and macOS:
+### 🚀 Cómo verlo localmente
+Clonar el repositorio y abrir el archivo `index.html` en el navegador:
 
 ```bash
-sudo git clone https://github.com/codewithsadee/jack-portfolio.git
+git clone https://github.com/santisuarez7/santisuarez7.github.io.git
+cd santisuarez7.github.io
 ```
 
-Windows:
+### 📬 Contacto
+- [GitHub](https://github.com/santisuarez7)
+- [LinkedIn](https://www.linkedin.com/in/santiago-suárez-468390303)
+- [Email](mailto:santysuarez16@gmail.com)
 
-```bash
-git clone https://github.com/codewithsadee/jack-portfolio.git
-```
-
-### Contact
-
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
-
-### License
-
-This project is **free to use** and does not contains any license.
