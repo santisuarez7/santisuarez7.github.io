@@ -43,8 +43,8 @@
       <div class="navbar-actions">
 
         <select name="language" id="lang">
-          <option value="en">Es</option>
-          <option value="ar">En</option>
+          <option value="es">Es</option>
+          <option value="en">En</option>
         </select>
 
         <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
@@ -61,27 +61,11 @@
 
       <nav class="navbar" data-navbar>
         <ul class="navbar-list">
-
-          <li>
-            <a href="#home" class="navbar-link">Home.</a>
-          </li>
-
-          <li>
-            <a href="#about" class="navbar-link">Sobre mí.</a>
-          </li>
-
-          <li>
-            <a href="#skills" class="navbar-link">Skills.</a>
-          </li>
-
-          <li>
-            <a href="#portfolio" class="navbar-link">Portafolio.</a>
-          </li>
-
-          <li>
-            <a href="#contact" class="navbar-link">Contacto.</a>
-          </li>
-
+          <li><a href="#home" class="navbar-link" data-key="home">Home.</a></li>
+          <li><a href="#about" class="navbar-link" data-key="about">Sobre mí.</a></li>
+          <li><a href="#skills" class="navbar-link" data-key="skills">Skills.</a></li>
+          <li><a href="#portfolio" class="navbar-link" data-key="portfolio">Portafolio.</a></li>
+          <li><a href="#contact" class="navbar-link" data-key="contact">Contacto.</a></li>
         </ul>
       </nav>
 
@@ -106,7 +90,7 @@
           <picture>
             <source srcset="./assets/images/hero-banner.png" media="(min-width: 768px)">
             <source srcset="./assets/images/hero-banner.png" media="(min-width: 500px)">
-            <img src="./assets/images/hero-banner-sm.png" alt="Imagen representativa"             
+            <img src="./assets/images/hero-banner.png" alt="Imagen representativa"             
               class="w-100">                                                                      
           </picture>
 
@@ -114,9 +98,13 @@
 
         <div class="hero-content">
 
-          <h2 class="h2 hero-title">Soy Santiago Suárez, programador en camino al análisis de datos</h2> 
+          <h2 class="h2 hero-title" data-key="heroTitle">
+            Soy Santiago Suárez, programador en camino al análisis de datos
+          </h2>
 
-          <a href="#contact" class="btn btn-primary">Contactame</a> 
+          <a href="#contact" class="btn btn-primary" data-key="contactMe">
+            Contactame
+          </a>
 
         </div>
 
@@ -162,7 +150,7 @@
                 <img src="./assets/images/stats-card_icon-1.png" alt="Icono título universitario">
               </div>
               <h2 class="h2 card-title">
-                2025 <strong>Graduado UTN - Técnico en Programación</strong>
+                2025 <strong><span data-key="statGraduado">Graduado UTN - Técnico en Programación</span></strong>
               </h2>
               <ion-icon name="chevron-forward-outline"></ion-icon>
             </a>
@@ -174,7 +162,7 @@
                 <img src="./assets/images/stats-card_icon-2.png" alt="Icono certificación">
               </div>
               <h2 class="h2 card-title">
-                2025 <strong>Certificación Google - Análisis de Datos</strong>
+                2025 <strong><span data-key="statCertificacion">Certificación Google - Análisis de Datos</span></strong>
               </h2>
               <ion-icon name="chevron-forward-outline"></ion-icon>
             </a>
@@ -186,16 +174,13 @@
                 <img src="./assets/images/globe-americas.svg" alt="Icono idioma inglés">
               </div>
               <h2 class="h2 card-title">
-                Inglés<strong>Intermedio</strong>
+                Inglés <strong><span data-key="statIngles">Intermedio</span></strong>
               </h2>
               <ion-icon name="chevron-forward-outline"></ion-icon>
             </a>
           </li>
         </ul>
       </section>
-
-
-
 
 
 
@@ -211,26 +196,26 @@
       </figure>
 
       <div class="about-content section-content">
+        <p class="section-subtitle" data-key="aboutSubtitle">Sobre mí</p>
 
-        <p class="section-subtitle">Sobre mí</p>
+        <h2 class="h3 section-title" data-key="aboutTitle">
+          Programador recién graduado, iniciando mi carrera en análisis de datos
+        </h2>
 
-        <h2 class="h3 section-title">Programador recién graduado, iniciando mi carrera en análisis de datos</h2>
-
-        <p class="section-text">
+        <p class="section-text" data-key="aboutText">
           Me recibí como Técnico en Programación en la UTN en 2025 y completé la certificación de Google en Análisis de Datos.  
           Estoy dando mis primeros pasos profesionales, con el objetivo de crecer en el área de data analytics y combinar mis conocimientos de programación con el análisis de información.  
         </p>
 
         <div class="btn-group">
-          <a href="#skills"><button class="btn btn-secondary">Ver proyectos</button></a>
-          <button id="download-cv" class="btn btn-primary">Descargar CV</button>
+          <a href="#portfolio"><button class="btn btn-secondary" data-key="viewProjects">Ver proyectos</button></a>
+          <a id="download-cv" href="./assets/CV-Santiago-Suárez.pdf" download class="btn btn-primary" target="_blank" data-key="downloadCV">
+            Descargar CV
+          </a>
         </div>
-
       </div>
 
     </section>
-
-
 
 
 
@@ -242,16 +227,17 @@
 
         <div class="skills-content section-content">
 
-          <p class="section-subtitle">Mis skills</p>
+          <p class="section-subtitle" data-key="skillsSubtitle">Mis skills</p>
 
-          <h2 class="h3 section-title">Skills y herramientas</h2> 
+          <h2 class="h3 section-title" data-key="skillsTitle">Skills y herramientas</h2> 
 
-          <p class="section-text"> Estas son las tecnologías y herramientas que manejo y estoy aprendiendo.</p>
+          <p class="section-text" data-key="skillsText">
+            Estas son las tecnologías y herramientas que manejo y estoy aprendiendo.
+          </p>
 
           <div class="skills-toggle" data-toggle-box>
-            <button class="toggle-btn active" data-toggle-btn>Skills</button>
-
-            <button class="toggle-btn" data-toggle-btn>Tools</button>     
+            <button class="toggle-btn active" data-toggle-btn data-key="skillsBtn">Skills</button>
+            <button class="toggle-btn" data-toggle-btn data-key="toolsBtn">Tools</button>     
           </div>
 
         </div>
@@ -466,11 +452,11 @@
           <li>
             <div class="project-content section-content">
 
-              <p class="section-subtitle">Mis proyectos</p>
+              <p class="section-subtitle" data-key="projectsSubtitle">Mis proyectos</p>
 
-              <h2 class="h3 section-title">Algunos de mis trabajos</h2>
+              <h2 class="h3 section-title" data-key="projectsTitle">Algunos de mis trabajos</h2>
 
-              <p class="section-text">
+              <p class="section-text" data-key="projectsText">
                 Estos son proyectos académicos y personales que reflejan mi aprendizaje en programación y análisis de datos. 
                 Podés ver el código en GitHub y los notebooks en Kaggle.         
               </p>
@@ -485,8 +471,8 @@
                 <img src="./assets/images/project-restaurant.png" class="w-100" alt="Proyecto Restaurante">     
               </figure>
               <div class="card-content">
-                <h3 class="h4 card-title">Restauran't</h3>
-                <time class="publish-date" datetime="2025-11">Noviembre 2025</time>
+                <h3 class="h4 card-title" data-key="projectRestaurant">Restauran't</h3>
+                <time class="publish-date" datetime="2025-11" data-key="projectRestaurantDate">Noviembre 2025</time>    
               </div>
             </a>
           </li>
@@ -498,21 +484,21 @@
                 <img src="./assets/images/project-clinica.png" class="w-100" alt="Proyecto Clínica Online">     
               </figure>
               <div class="card-content">
-                <h3 class="h4 card-title">Clínica Online</h3>
-                <time class="publish-date" datetime="2024-11">Noviembre 2024</time>
+                <h3 class="h4 card-title" data-key="projectClinica">Clínica Online</h3>
+                <time class="publish-date" datetime="2024-11" data-key="projectClinicaDate">Noviembre 2024</time>
               </div>
             </a>
           </li>
 
           <!-- Bootcamp Data Analytics -->
           <li>
-            <a href="https://github.com/tuusuario/bootcamp-data-analytics" class="project-card" target="_blank">     <!--isajdoijasiodjoijisojoijajd-->
+            <a href="https://github.com/santisuarez7/data-analytics-bootcamp.git" class="project-card" target="_blank">
               <figure class="card-banner">        
                 <img src="./assets/images/project-analytics.jpg" class="w-100" alt="Bootcamp Data Analytics">     
               </figure>
               <div class="card-content">
-                <h3 class="h4 card-title">Bootcamp Data Analytics</h3>
-                <time class="publish-date" datetime="2025-02">Febrero 2025</time>
+                <h3 class="h4 card-title" data-key="projectBootcamp">Bootcamp Data Analytics</h3>
+                <time class="publish-date" datetime="2025-02" data-key="projectBootcampDate">Febrero 2025</time>
               </div>
             </a>
           </li>
@@ -524,8 +510,8 @@
                 <img src="./assets/images/project-cyclistic.png" class="w-100" alt="Case Study 1">        
               </figure>
               <div class="card-content">
-                <h3 class="h4 card-title">Case Study Cyclistic</h3>
-                <time class="publish-date" datetime="2025-12">Diciembre 2025</time>
+                <h3 class="h4 card-title" data-key="projectCyclistic">Estudio de Caso: Cyclistic</h3>
+                <time class="publish-date" datetime="2025-12" data-key="projectCyclisticDate">Diciembre 2025</time>
               </div>
             </a>
           </li>
@@ -537,8 +523,8 @@
                 <img src="./assets/images/project-bellabeat.png" class="w-100" alt="Case Study 2">    
               </figure>
               <div class="card-content">
-                <h3 class="h4 card-title">Case Study Bellabeat</h3>
-                <time class="publish-date" datetime="2026-01">Enero 2026</time>
+                <h3 class="h4 card-title" data-key="projectBellabeat">Estudio de Caso: Bellabeat</h3>
+                <time class="publish-date" datetime="2026-01" data-key="projectBellabeatDate">Enero 2026</time>
               </div>
             </a>
           </li>
@@ -558,11 +544,13 @@
 
       <div class="contact-content section-content">
 
-        <p class="section-subtitle">Contacto</p>
+        <p class="section-subtitle" data-key="contactSubtitle">Contacto</p>
 
-        <h2 class="h3 section-title">¿Querés ponerte en contacto conmigo?</h2>
+        <h2 class="h3 section-title" data-key="contactTitle">
+          ¿Querés ponerte en contacto conmigo?
+        </h2>
 
-        <p class="section-text">
+        <p class="section-text" data-key="contactText">
           Si tenés una propuesta podés completar el formulario o usar los medios de contacto que figuran abajo.
         </p>
 
@@ -573,7 +561,7 @@
               <ion-icon name="call-outline"></ion-icon>
             </div>
             <div class="wrapper">
-              <h3 class="h4 contact-item-title">Teléfonos:</h3>
+              <h3 class="h4 contact-item-title" data-key="contactPhones">Teléfonos:</h3>
               <a href="tel:+541121577705" class="contact-info">(+54) 11 2157 7705</a>
               <a href="tel:+541126319957" class="contact-info">(+54) 11 2631 9957</a>
             </div>
@@ -611,44 +599,42 @@
 
       </div>
 
-      <form action="" class="contact-form">
+      <form id="contact-form" class="contact-form">
 
         <div class="form-wrapper">
-          <label for="name" class="form-label">Nombre</label>
+          <label for="name" class="form-label" data-key="formNameLabel">Nombre</label>
           <div class="input-wrapper">
-            <input type="text" name="name" id="name" required placeholder="ej. Juan Gómez" class="input-field">
+            <input type="text" name="name" id="name" required placeholder="ej. Juan Gómez" class="input-field" data-key="formNamePlaceholder">
             <ion-icon name="person-circle"></ion-icon>
           </div>
         </div>
 
         <div class="form-wrapper">
-          <label for="email" class="form-label">Email</label>
+          <label for="email" class="form-label" data-key="formEmailLabel">Email</label>
           <div class="input-wrapper">
-            <input type="email" name="email" id="email" required placeholder="ej. juangomez@mail.com" class="input-field">
+            <input type="email" name="email" id="email" required placeholder="ej. juangomez@mail.com" class="input-field" data-key="formEmailPlaceholder">
             <ion-icon name="mail"></ion-icon>
           </div>
         </div>
 
         <div class="form-wrapper">
-          <label for="phone" class="form-label">Teléfono</label>
+          <label for="phone" class="form-label" data-key="formPhoneLabel">Teléfono</label>
           <div class="input-wrapper">
-            <input type="tel" name="phone" id="phone" required placeholder="Número telefónico" class="input-field">
+            <input type="tel" name="phone" id="phone" required placeholder="Número telefónico" class="input-field" data-key="formPhonePlaceholder">
             <ion-icon name="call"></ion-icon>
           </div>
         </div>
 
         <div class="form-wrapper">
-          <label for="message" class="form-label">Mensaje</label>
+          <label for="message" class="form-label" data-key="formMessageLabel">Mensaje</label>
           <div class="input-wrapper">
-            <textarea name="message" id="message" required placeholder="Escribí un mensaje..." class="input-field"></textarea>
+            <textarea name="message" id="message" required placeholder="Escribí un mensaje..." class="input-field" data-key="formMessagePlaceholder"></textarea>
             <ion-icon name="chatbubbles"></ion-icon>
           </div>
         </div>
 
-        <button type="submit" class="btn btn-primary">Enviar</button>
-
+        <button type="submit" class="btn btn-primary" data-key="formSubmit">Enviar</button><br>
       </form>
-
     </section>
 
 

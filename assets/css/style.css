@@ -1361,3 +1361,27 @@ textarea.input-field {
   .about-banner { max-width: 450px; }
 
 }
+
+.form-status {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin-inline: auto;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Estado exitoso */
+.form-status.success {
+  background-color: var(--raw-seinna);
+  color: var(--bg-primary);
+}
+
+/* Estado error */
+.form-status.error {
+  background-color: #ff4f4f;
+  color: white;
+}
