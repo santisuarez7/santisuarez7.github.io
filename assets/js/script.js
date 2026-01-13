@@ -143,6 +143,12 @@ form.addEventListener("submit", async (e) => {
       status.textContent = "¡Mensaje enviado con éxito!";
       status.className = "form-status success";
       form.reset();
+
+      // borrar status después de 4 segundos
+      setTimeout(() => {
+        status.textContent = "";
+        status.className = "form-status";
+      }, 4000);
     } else {
       status.textContent = "Hubo un error al enviar el mensaje.";
       status.className = "form-status error";
@@ -154,6 +160,7 @@ form.addEventListener("submit", async (e) => {
 });
 
 
+
 const translations = {
   es: {
     home: "Inicio.",
@@ -162,7 +169,7 @@ const translations = {
     portfolio: "Portafolio.",
     contact: "Contacto.",
     formSuccess: "¡Mensaje enviado con éxito!",
-    heroTitle: "Soy Santiago Suárez, programador en camino al análisis de datos",
+    heroTitle: "Santiago Suárez — Analista de Datos Junior / Programador",
     contactMe: "Contactame",
     statGraduado: "Graduado UTN - Técnico en Programación",
     statCertificacion: "Certificación Google - Análisis de Datos",
@@ -201,7 +208,6 @@ const translations = {
     formPhoneLabel: "Teléfono",
     formPhonePlaceholder: "Número telefónico",
     formMessageLabel: "Mensaje",
-    formMessagePlaceholder: "Escribí un mensaje...",
     formSubmit: "Enviar",
     formSuccess: "¡Mensaje enviado con éxito!",
     formError: "Hubo un error al enviar el mensaje.",
@@ -214,7 +220,7 @@ const translations = {
     portfolio: "Portfolio.",
     contact: "Contact.",
     formSuccess: "Message sent successfully!",
-    heroTitle: "I am Santiago Suárez, programmer on the path to data analysis",
+    heroTitle: "Santiago Suárez — Junior Data Analyst / Programmer",
     contactMe: "Contact me",
     statGraduado: "UTN Graduate - Programming Technician",
     statCertificacion: "Google Certification - Data Analysis",
@@ -253,7 +259,6 @@ const translations = {
     formPhoneLabel: "Phone",
     formPhonePlaceholder: "Phone number",
     formMessageLabel: "Message",
-    formMessagePlaceholder: "Write a message...",
     formSubmit: "Send",
     formSuccess: "Message sent successfully!",
     formError: "There was an error sending the message.",
